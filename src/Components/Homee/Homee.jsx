@@ -1,7 +1,7 @@
 import Header from "../Header/Header"
 import Moviecontainer from "../MovieContainer/MovieContainer";
 
-const Home = () => {
+const Homee = () => {
     return (
         <>
             <Header />
@@ -10,4 +10,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Homee;
