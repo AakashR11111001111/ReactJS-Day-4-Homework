@@ -1,5 +1,5 @@
 import Header from "../Header/Header"
-import Moviecontainer from "../MovieContainer/Moviecontainer";
+import Moviecontainer from "../MovieContainer/MovieContainer";
 
 const Home = () => {
     return (
