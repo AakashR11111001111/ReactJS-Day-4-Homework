@@ -5,7 +5,7 @@ const Homee = () => {
     return (
         <>
             <Header />
-            <Moviecontainer />
+            <Moviecontainer />   
         </>
     )
 }

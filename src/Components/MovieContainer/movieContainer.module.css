@@ -106,3 +106,14 @@
     fill: white;
     filter: drop-shadow(0 0 10px white);
 }
+
+.ir{
+    position: absolute;
+    bottom: 1vw;
+    font-size: 10px !important;
+}
+
+.ir span{
+    font-weight: 500;
+    color: chartreuse !important;
+}
