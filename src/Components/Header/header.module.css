@@ -1,0 +1,105 @@
+nav{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1vw 3vw;
+    backdrop-filter: blur(5px);
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+    -webkit-text-stroke: .5px white;
+    text-shadow: 0 0 20px black;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: Black;
+    font-weight: 900;
+    -webkit-text-stroke: .5px white;
+    font-size: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 20px black;
+}
+
+nav ul a::before{
+    content: '';
+    position: absolute;
+    height: 10%;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+nav ul a:hover::before{
+    width: 100%;
+    background: yellow;
+}
+
+nav ul a:hover{
+    color: red;
+    -webkit-text-stroke: .5px yellow;
+}
+
+.searchBox{
+    background-color: rgba(0, 0, 0, 0.0);
+    height: 35px;
+    width: 400px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox input{
+    cursor: pointer;
+    font-family: "poppins",serif;
+    height: 100%;
+    width: 90%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 100px 0 0 100px;
+}
+
+.searchBox input:focus-visible{
+    outline: none;
+}
+
+.searchIt svg{
+    transition: all 0.3s ease;
+}
+
+.searchIt:hover svg{
+    fill: white;
+}
+
+.searchIt{
+    height: 35px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 100px 100px 0;
+}
+

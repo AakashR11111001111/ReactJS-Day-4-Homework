@@ -1,0 +1,108 @@
+.mContainer{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 10px 0;
+}
+
+.card{
+    background: black;
+    height: 350px;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 1vw;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+    scale: 1.01;
+}
+
+.card .title{
+    color: white;
+    font-weight: 100;
+}
+
+.upper{
+    height: 100%;
+    width: 60%;   
+    display: flex;
+    gap: 10px;
+}
+
+.upper img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.ry{
+    font-size: 20px;
+    font-weight: 200;
+    color: cadetblue;
+}
+
+.metaCont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.metaCont p{
+    color: white;
+    font-weight: 100;
+}
+
+.genre{
+    border: 1px solid rgba(255, 255, 255, 0.246);
+    border-radius: 5px;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    width: fit-content;
+    padding: .1vw .3vw;
+    transition: all 0.2s ease;
+}
+
+.genre:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.links{
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1vw 0vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.links .like{
+    stroke: red;
+    transition: all 0.2s ease;
+}
+
+.share{
+    stroke: white;
+    transition: all 0.2s ease;
+}
+
+.links .like:hover{
+    fill: red;
+    filter: drop-shadow(0 0 10px red);
+}
+
+.share:hover{
+    fill: white;
+    filter: drop-shadow(0 0 10px white);
+}
